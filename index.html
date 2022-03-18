@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>SOP 4 By Sanaullah</title>
+    <style>
+        p{
+            line-height: 30px;
+        }
+        .Output{
+            font-size: 18px;
+            font-weight: 600;
+            color: #265df2;
+        }
+        .div{
+            border: 2px solid black;
+        }
+        iframe{
+            height: 210px;
+            width: 480px;
+            border: none;
+        }
+        .div{
+            text-align: center;
+        }
+        .text-boxes{
+            height: 100%;
+            width: 100%;
+            justify-content: center;
+            display: flex;
+            padding: 0 30px;
+        }
+        .text-boxes .text-box{
+            height: 380px;
+            max-width: 660px;
+            width: 100%;
+            margin: 55px 0;
+        }
+        .text-boxes .text-box .topic{
+            font-size: 18px;
+            font-weight: 600;
+            color: #265df2;
+            margin: 4px;
+        }
+        .text-boxes .text-box textarea{
+            height: 100%;
+            width: 100%;
+            padding: 30px;
+            font-size: 15px;
+            font-weight: 400;
+            outline: none;
+            border: 1px solid #265df2;
+            border-radius: 8px;
+            background: #cad5f3;
+        }
+        .text-box textarea::-webkit-scrollbar{
+            display: none;
+        }
+        .text-boxes .text-box button{
+            height: 45px;
+            width: 155px;
+            color: #fff;
+            background: #265df2;
+            outline: none;
+            border: none;
+            border-radius: 8px;
+            font-size: 17px;
+            font-weight: 400px;
+            cursor: pointer;
+            margin: 8px 0;
+            transition: all 0.4s ease;
+         }
+         a{
+             text-decoration: none;
+             color: white;
+         }
+    </style>
+</head>
+<body>
+    <p>
+    <span style="color: rgb(24, 190, 245);">SOP 1 : Write a program using HTML with following specifications.<br></span>
+    <span style="color: red">&#9679;</span>The background colour should be green.<br>
+    <span style="color: red">&#9679;</span>The text colour should be red.<br>
+    <span style="color: red">&#9679;</span>The heading should be large in size as 'My First Web Page'.<br>
+    <span style="color: red">&#9679;</span>Display a horizontal line after the heading.<br>
+    <span style="color: red">&#9679;</span>Display your name in Bold, address in Italics and standard as 11<sup>th</sup>.<br>
+    <br>
+    </p>
+    <span class="Output">Output:</span><br><br>
+    <div class="div"><iframe src="OUTPUT/s4.html" scrolling="no"></iframe></div>
+    <div class="text-boxes">
+        <div class="text-box">
+            <div class="topic">Web page Code:</div>
+            <textarea id="HTMLBox" readonly>
+                Code for web page:-
+
+                
+                <!DOCTYPE html>
+                <head>
+                    <title>Sop 4</title>
+                </head>
+                <body>
+                    <b>STD - XI</b><br>
+                    <i>Stream - Science</i><br>
+                    <a href="Div-A.html">Div-A</a><br>
+                </body>
+                </html>
+                    
+            </textarea><br>
+            <button id="HTMLButton">Copy Code</button>
+            <button id="HTMLButton"><a href="tbcode.html">Table Code</a></button><br>
+            <button class="btn" style="width: 17%"><a href="Sop 3.html"><i class="fa">&#xf053</i> Sop 3</a></button>
+            <button class="btn" style="width: 17%; margin-left: 22%;"><a href="Sop.html"><i class="fa fa-home"></i>Home</a></button>
+            <button class="btn" style="width: 17%; margin-left: 25%;"><a href="">Java<i class="fa">&#xf054 </i></a></button>
+        </div>
+    </div>
+
+    <script>
+
+        let HTMLBox = document.getElementById("HTMLBox");
+        let HTMLButton = document.getElementById("HTMLButton");
+
+        HTMLButton.onclick = function(){
+            HTMLBox.select();
+            document.execCommand("copy");
+            HTMLButton.innerText = "Codes Copied"
+        }
+    </script>
+
+</body>
+</html>
